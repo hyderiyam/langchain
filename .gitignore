@@ -1,15 +1,58 @@
+# Environment / secrets
 .env
 .env.*
 !.env.example
 
+# Python cache
 __pycache__/
-*.pyc
+*.py[codz]
+*$py.class
 
+# Virtual environments
 .venv/
 venv/
 env/
+ENV/
+env.bak/
+venv.bak/
 
+# Build / distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter
 .ipynb_checkpoints/
 
+# IDE
 .vscode/
 .idea/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Logs
+*.log
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Ruff
+.ruff_cache/
+
+# MyPy
+.mypy_cache/
+
+# Pyre
+.pyre/
+
+# Pylance / temporary
+tempCodeRunnerFile.py
+
+# Streamlit secrets
+.streamlit/secrets.toml
